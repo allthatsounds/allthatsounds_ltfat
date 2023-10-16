@@ -1,6 +1,9 @@
 name: GitHub Actions Demo
 run-name: ${{ github.actor }} is redesigning LTFAT 🚀
 on: [push]
+permissions:
+  contents: write
+
 jobs:
   deploy_homepage:
     runs-on: ubuntu-latest
