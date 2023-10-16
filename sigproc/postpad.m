@@ -1,5 +1,5 @@
 function x = postpad (x, L, varargin)
-%POSTPAD   Pads or truncates a vector x to a specified length L.
+%POSTPAD   Pads or truncates a vector x to a specified length L
 %   Usage: y=postpad(x,L);
 %          y=postpad(x,L,C);
 %          y=postpad(x,L,C,dim);
