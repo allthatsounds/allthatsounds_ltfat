@@ -38,7 +38,7 @@ jobs:
         run: cp -R /home/runner/publish/allthatsounds_ltfat-html/. ./ltfat_homepage/doc
       - name: Setup git
         run: |
-          git config user.name github-actions
+          git config user.name allthatsounds
           git config user.email github-actions@github.com
           git add .
           git commit -m "added all new files"
