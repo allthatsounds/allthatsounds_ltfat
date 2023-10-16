@@ -1,0 +1,54 @@
+name: GitHub Actions Demo
+run-name: ${{ github.actor }} is redesigning LTFAT 🚀
+on: [push]
+jobs:
+  deploy_homepage:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Update ubuntu
+        run: sudo apt-get update
+      - name: Check out allthatsounds_ltfat repository
+        uses: actions/checkout@v3
+      - name: Install Octave
+        run: sudo apt-get install octave
+      - name: Check out mat2doc repository
+        uses: actions/checkout@master
+        with:
+          repository: ltfat/mat2doc
+          path: './mat2doc_exec'
+      - name: Install Bibtex2html
+        run: sudo apt-get install -y bibtex2html
+      - name: Install lynx
+        run: sudo apt-get install lynx
+      - name: Install pip
+        run: sudo apt install python3-pip
+      - name: Install Python packages
+        run: pip install numpy scipy docutils
+      - name: Generate mat files
+        run: ./mat2doc_exec/mat2doc.py ./ltfat/allthatsounds_ltfat mat
+      - name: Generate html files
+        run: ./mat2doc_exec/mat2doc.py ./ltfat/allthatsounds_ltfat html --no-plot
+      - name: Check out ltfat homepage repository
+        uses: actions/checkout@master
+        with:
+          repository: allthatsounds/allthatsounds.github.io
+          path: './ltfat_homepage'
+          token: ${{ secrets.API_TOKEN_GITHUB }}
+      - name: Copy html files
+        run: cp -R /home/runner/publish/allthatsounds_ltfat-html/. ./ltfat_homepage/doc
+      - name: Setup git
+        run: |
+          git config user.name github-actions
+          git config user.email github-actions@github.com
+          git add .
+          git commit -m "added all new files"
+      - name: Pushes to allthatsounds.github.io
+        uses: cpina/github-action-push-to-another-repository@main
+        env:
+          API_TOKEN_GITHUB: ${{ secrets.API_TOKEN_GITHUB }}
+        with:
+          source-directory: './ltfat_homepage'
+          destination-github-username: 'allthatsounds'
+          destination-repository-name: 'allthatsounds.github.io'
+          user-email: 'github-actions@github.com'
+          target-branch: main
