@@ -36,7 +36,7 @@ jobs:
         with:
           repository: allthatsounds/allthatsounds.github.io
           path: './ltfat_homepage'
-          #token: ${{ secrets.API_TOKEN_GITHUB }}
+          token: ${{ secrets.API_TOKEN_GITHUB }}
       - name: Copy html files
         run: cp -R /home/runner/publish/allthatsounds_ltfat-html/. ./ltfat_homepage/doc
       - name: Setup git
@@ -54,4 +54,3 @@ jobs:
           destination-github-username: 'allthatsounds'
           destination-repository-name: 'allthatsounds.github.io'
           user-email: 'github-actions@github.com'
-          target-branch: main
