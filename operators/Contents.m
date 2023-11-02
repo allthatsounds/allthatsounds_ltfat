@@ -17,7 +17,6 @@
 %    FRAMEMULADJ       - Apply the adjoint of a frame multiplier
 %    FRAMEMULAPPR      - Best approx. by frame multiplier
 %    FRAMEMULEIGS      - Eigenpairs of a frame multiplier
-%    GABMULAPPR        - Best approximation by a Gabor mult.
 %
 %  Spreading operators
 %    SPREADOP          - Spreading operator

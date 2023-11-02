@@ -2,14 +2,6 @@
 %
 %  Peter L. Søndergaard, 2007 - 2023.
 %
-%  Basic Time/Frequency analysis
-%    TCONV          -  Twisted convolution
-%    DSFT           -  Discrete Symplectic Fourier Transform
-%    ZAK            -  Zak transform
-%    IZAK           -  Inverse Zak transform
-%    COL2DIAG       -  Move columns of a matrix to diagonals
-%    S0NORM         -  S0-norm
-%
 %  Gabor systems
 %    DGT            -  Discrete Gabor transform
 %    IDGT           -  Inverse discrete Gabor transform
@@ -23,9 +15,6 @@
 %    PROJKERN	    -  Projection of Gabor coefficients onto kernel space
 %    DGTLENGTH      -  Length of Gabor system to expand a signal
 %
-%  Multi-Gabor systems
-%    MULTIDGTREALMP -  Matching pursuit decomposition in Multi-Gabor system 
-%
 %  Reconstructing windows
 %    GABDUAL        -  Canonical dual window
 %    GABTIGHT       -  Canonical tight window
@@ -36,6 +25,8 @@
 %    GABCONVEXOPT   -  Optimized window
 %    GABPROJDUAL    -  Dual window by projection
 %    GABMIXDUAL     -  Dual window by mixing windows
+%    PTPFUNDUAL     -  Dual window for |PTPFUN|
+%    PEBFUNDUAL     -  Dual window for |PEBFUN|
 %
 %  Conditions numbers
 %    GABFRAMEBOUNDS -  Frame bounds of Gabor system
@@ -51,7 +42,7 @@
 %    GABREASSIGNREAL    -  Reassign positive distribution for real signals
 %    GABREASSIGNADJUST - Adjustable t-f reassignment
 %
-%  Phase reconstruction
+%  Phase reconstruction (should go to PHASERET)
 %    CONSTRUCTPHASE     - Phase construction from abs. values of |dgt|
 %    CONSTRUCTPHASEREAL - |constructphase| for |dgtreal|
 %
@@ -68,6 +59,11 @@
 %    SHEARFIND      -  Shears to transform a general lattice to a separable
 %    NOSHEARLENGTH  -  Next transform side not requiring a frequency side shear
 %
+%  Applications
+%    MULTIDGTREALMP -  Matching pursuit decomposition in Multi-Gabor system 
+%    tfjigsawsep      - Tonal-transient-residual separation using the T-F jigsaw puzzle algorithm.
+%    GABMULAPPR        - Best approximation by a Gabor multiplier
+%
 %  Plots
 %    TFPLOT         -  Plot coefficients on the time-frequency plane
 %    PLOTDGT        -  Plot |dgt| coefficients
@@ -77,6 +73,7 @@
 %    RESGRAM        -  Reassigned spectrogram
 %    INSTFREQPLOT   -  Plot of the instantaneous frequency
 %    PHASEPLOT      -  Plot of STFT phase
+%    plottfjigsawsep  - Plot the output of |tfjigsawsep|
 %
 %  For help, bug reports, suggestions etc. please visit 
 %  http://github.com/ltfat/ltfat/issues
