@@ -2,7 +2,7 @@
 %
 %  Peter L. Søndergaard, 2011 - 2023.
 %
-%  Transforms and basic routines
+%  Basic transform routines
 %    FILTERBANK             - Filter bank
 %    UFILTERBANK            - Uniform Filter bank
 %    IFILTERBANK            - Inverse normal/uniform filter bank
@@ -43,7 +43,7 @@
 %    FILTERBANKREASSIGN       - Reassign filterbank spectrogram
 %    FILTERBANKSYNCHROSQUEEZE - Synchrosqueeze filterbank spectrogram  
 %
-%  Phase reconstruction
+%  Phase reconstruction (should go to PHASERET)
 %    FILTERBANKCONSTPHASE     - Construct suitable phase from the coefficient magnitude
 %    
 %

@@ -2,7 +2,7 @@
 %
 %  Florent Jaillet and Peter L. Søndergaard, 2011 - 2023.
 %
-%  Transforms
+%  Basic transform routines
 %    NSDGT                - Non-stationary DGT
 %    UNSDGT               - Uniform non-stationary DGT
 %    INSDGT               - Inverse NSDGT and UNSDGT

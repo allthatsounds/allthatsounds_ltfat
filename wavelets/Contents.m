@@ -8,7 +8,7 @@
 %   Time-Frequency Analysis Toolbox for MATLAB/GNU Octave.” ACM Trans. Math. Softw. 42, 4,
 %   Article 32, 2016. DOI: 10.1145/2839298
 %   
-%   Basic analysis/synthesis
+%   Basic transform routines
 %      FWT               - Fast Wavelet Transform 
 %      IFWT              - Inverse Fast Wavelet Transform
 %      FWT2              - 2D Fast Wavelet Transform 
@@ -18,7 +18,7 @@
 %      FWTLENGTH         - Length of Wavelet system to expand a signal
 %      FWTCLENGTH        - Lengths of the wavelet coefficient subbands
 %
-%   Advanced analysis/synthesis
+%   Advanced transform routines
 %      WFBT              - Transform using general Wavelet Filter Bank Tree 
 %      IWFBT             - Inverse transform using general Wavelet Filter Bank Tree
 %      UWFBT             - Undecimated transform using general Wavelet Filter Bank Tree 

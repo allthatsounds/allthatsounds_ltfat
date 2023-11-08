@@ -2,7 +2,7 @@
 %
 %  Peter L. Søndergaard, 2007 - 2023.
 %
-%  Gabor systems
+%  Basic transform routines
 %    DGT            -  Discrete Gabor transform
 %    IDGT           -  Inverse discrete Gabor transform
 %    ISGRAM         -  Iterative reconstruction from spectrogram
@@ -15,7 +15,13 @@
 %    PROJKERN	    -  Projection of Gabor coefficients onto kernel space
 %    DGTLENGTH      -  Length of Gabor system to expand a signal
 %
-%  Reconstructing windows
+%  Advanced transform routines: Non-separable lattices
+%    MATRIX2LATTICETYPE - Matrix form to standard lattice description
+%    LATTICETYPE2MATRIX - Standard lattice description to matrix form
+%    SHEARFIND      -  Shears to transform a general lattice to a separable
+%    NOSHEARLENGTH  -  Next transform side not requiring a frequency side shear
+%
+%  Window construction
 %    GABDUAL        -  Canonical dual window
 %    GABTIGHT       -  Canonical tight window
 %    GABFIRDUAL     -  FIR optimized dual window 
@@ -28,11 +34,22 @@
 %    PTPFUNDUAL     -  Dual window for |PTPFUN|
 %    PEBFUNDUAL     -  Dual window for |PEBFUN|
 %
-%  Conditions numbers
+%  Bounds
 %    GABFRAMEBOUNDS -  Frame bounds of Gabor system
 %    GABRIESZBOUNDS -  Riesz sequence/basis bounds of Gabor system
 %    GABDUALNORM    -  Test if two windows are dual
 %    GABFRAMEDIAG   -  Diagonal of Gabor frame operator
+%
+%  Plots
+%    TFPLOT         -  Plot coefficients on the time-frequency plane
+%    PLOTDGT        -  Plot |dgt| coefficients
+%    PLOTDGTREAL    -  Plot |dgtreal| coefficients
+%    SGRAM          -  Spectrogram based on |dgt|
+%    GABIMAGEPARS   -  Choose parameters for nice Gabor image
+%    RESGRAM        -  Reassigned spectrogram
+%    INSTFREQPLOT   -  Plot of the instantaneous frequency
+%    PHASEPLOT      -  Plot of STFT phase
+%    plottfjigsawsep  - Plot the output of |tfjigsawsep|
 %
 %  Phase gradient methods and reassignment
 %    GABPHASEGRAD   -  Instantaneous time/frequency from signal
@@ -53,27 +70,11 @@
 %    PHASEUNLOCKREAL -  Same as |phaseunlock| for |idgtreal|
 %    SYMPHASE        -  Convert to symmetric phase
 %
-%  Support for non-separable lattices
-%    MATRIX2LATTICETYPE - Matrix form to standard lattice description
-%    LATTICETYPE2MATRIX - Standard lattice description to matrix form
-%    SHEARFIND      -  Shears to transform a general lattice to a separable
-%    NOSHEARLENGTH  -  Next transform side not requiring a frequency side shear
-%
-%  Applications
+%  General applications
 %    MULTIDGTREALMP -  Matching pursuit decomposition in Multi-Gabor system 
 %    tfjigsawsep      - Tonal-transient-residual separation using the T-F jigsaw puzzle algorithm.
 %    GABMULAPPR        - Best approximation by a Gabor multiplier
 %
-%  Plots
-%    TFPLOT         -  Plot coefficients on the time-frequency plane
-%    PLOTDGT        -  Plot |dgt| coefficients
-%    PLOTDGTREAL    -  Plot |dgtreal| coefficients
-%    SGRAM          -  Spectrogram based on |dgt|
-%    GABIMAGEPARS   -  Choose parameters for nice Gabor image
-%    RESGRAM        -  Reassigned spectrogram
-%    INSTFREQPLOT   -  Plot of the instantaneous frequency
-%    PHASEPLOT      -  Plot of STFT phase
-%    plottfjigsawsep  - Plot the output of |tfjigsawsep|
 %
 %  For help, bug reports, suggestions etc. please visit 
 %  http://github.com/ltfat/ltfat/issues
