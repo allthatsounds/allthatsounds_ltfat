@@ -9,7 +9,7 @@
 %    LONG2FIR       -  Cut LONG window to FIR window.
 %    FREQWIN        -  Freq responses (Gauss,Gammatone,Butterworth,...)
 %    FREQWAVELET    -  Frequency responses of wavelets (Cauchy, Morse)
-%    for further wavelet functions, see https://allthatsounds.github.io/doc/wavelets/
+%    for more wavelet functions, see https://allthatsounds.github.io/doc/wavelets/
 %
 %  Filters
 %    FIRFILTER      -  Construct an FIR filter.
@@ -17,33 +17,16 @@
 %    WARPEDBLFILTER -  Warped, band-limited filter.
 %    FREQFILTER     -  Construct a full length frequency side filter.
 %    PFILT          -  Apply filter with periodic boundary conditions.
+%
+%   Support routines
+%    RMS            -  Compute the Root Mean Square norm of signal.
+%    SETNORM        -  Normalize signal by specified norm.
+%    CRESTFACTOR    -  Compute the crest factor of a signal.
+%    COL2DIAG       -  Move columns of a matrix to diagonals
+%    POSTPAD        -  Pad or truncate a vector.
 %    MAGRESP        -  Magnitude response plot.
 %    PGRPDELAY      -  Periodic Group Delay.
 %    TRANSFERFUNCTION - Compute the transfer function of a filter.
-%
-%  Signal analysis and synthesis
-%    RMS            -  Root Mean Square norm of signal.
-%    SETNORM        -  Normalize signal by specified norm.
-%    GAINDB         -  Scale input signal.
-%    CRESTFACTOR    -  Compute the crest factor of a signal.
-%    LOWDISCREPANCY -  Compute a low discrepancy sequence.
-%    UQUANT         -  Simulate uniform quantization.
-%    POSTPAD        -  Pad or truncate a vector.
-%    S0NORM         -  S0-norm
-%    RANGECOMPRESS  - Compress range of signal (mu-law etc).
-%    RANGEEXPAND    - Expand range of signal.
-%
-%  Ramping
-%    RAMPUP         -  Rising ramp.
-%    RAMPDOWN       -  Falling ramp.
-%    RAMPSIGNAL     -  Ramp a signal.
-%
-%  Thresholding methods
-%    THRESH         -  Coefficient thresholding.
-%    LARGESTR       -  Keep largest ratio of coefficients.
-%    LARGESTN       -  Keep N largest coefficients.
-%    DYNLIMIT       -  Limit the dynamical range.
-%    GROUPTHRESH    -  Group thresholding.
 %
 %  Auditory processing
 %     AUDTOFREQ        - Auditory unit to frequency conversion.
@@ -54,21 +37,22 @@
 %     FREQTOERB        - Frequency to erb scale conversion.
 %     ERBSPACE         - Equidistant points on the erb scale.
 %     ERBSPACEBW       - Equidistant points by equal bandwidth.
-%     AUDFILTBW        - Bandwidth of audiory filters.
+%     AUDFILTBW        - Bandwidth of auditory filters.
 %     GAMMATONEFIR     - Gammatone FIR approximation.
 %     SEMIAUDPLOT      - 2D plot on auditory scale.
 %
-%  Image processing
-%    RGB2JPEG       -  Convert RGB values to the JPEG colour model
-%    JPEG2RGB       -  Convert values from the JPEG colour model to RGB
+%  Thresholding methods
+%    THRESH         -  Coefficient thresholding.
+%    LARGESTR       -  Keep largest ratio of coefficients.
+%    LARGESTN       -  Keep N largest coefficients.
+%    DYNLIMIT       -  Limit the dynamic range.
+%    GROUPTHRESH    -  Group thresholding.
+%    S0NORM         -  S0-norm.
 %
 %  Tools for OFDM
 %    QAM4           -  Quadrature amplitude modulation, order 4
 %    IQAM4          -  Inverse QAM of order 4
 %
-%   Auxiliary
-%    COL2DIAG       -  Move columns of a matrix to diagonals
 %
 %  For help, bug reports, suggestions etc. please visit 
 %  http://github.com/ltfat/ltfat/issues
-%
