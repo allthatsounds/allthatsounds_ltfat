@@ -7,16 +7,20 @@
 %    EXPCHIRP       -  Exponential chirp.
 %    LOWDISCREPANCY -  Low discrepancy sequence.
 %
-%  Audio signals
-%    BAT            -  Bat chirp.
-%    BATMASK        -  Mask for bat signal.
-%    GREASY         -  Woman speaking the word 'greasy'
-%    COCKTAILPARTY  -  Sentence by male, native English speaker.
-%    GSPI           -  Glockenspiel test signal.
-%    LINUS          -  Linus pronouncing Linux.
-%    LTFATLOGO      -  Synthetic sound from spectrogram reconstruction.
-%    OTOCLICK       -  Click-evoked otoacoustic emmision. 
-%    TRAINDOPPLER   -  Sound of passing train.
+%  Periodic functions
+%    EXPWAVE        -  Complex exponential wave.
+%    PCHIRP         -  Periodic chirp.
+%    PGAUSS         -  Periodic Gaussian.
+%    PSECH          -  Periodic SECH.
+%    PBSPLINE       -  Periodic B-splines.
+%    SHAH           -  Shah distribution.
+%    PHEAVISIDE     -  Periodic Heaviside function.
+%    PRECT          -  Periodic rectangle function.
+%    PSINC          -  Periodic sinc function.
+%    PTPFUN         -  Periodic totally positive function of finite type.
+%    PEBFUN         -  Periodic EB spline.
+%    PHERM          -  Periodic Hermite functions.
+%    HERMBASIS      -  Orthonormal basis of Hermite functions.  
 %
 %  Ramping
 %    RAMPUP         -  Rising ramp.
@@ -29,7 +33,18 @@
 %    RANGEEXPAND    -  Expand range of signal.
 %    GAINDB         -  Scale input signal.
 %
-%  Images.
+%  Sound
+%    BAT            -  Bat chirp.
+%    BATMASK        -  Mask for bat signal.
+%    GREASY         -  Woman speaking the word 'greasy'
+%    COCKTAILPARTY  -  Sentence by male, native English speaker.
+%    GSPI           -  Glockenspiel test signal.
+%    LINUS          -  Linus pronouncing Linux.
+%    LTFATLOGO      -  Synthetic sound from spectrogram reconstruction.
+%    OTOCLICK       -  Click-evoked otoacoustic emmision. 
+%    TRAINDOPPLER   -  Sound of passing train.
+%
+%  Images
 %    CAMERAMAN      -  Greyscale image of the cameraman.
 %    LICHTENSTEIN   -  Color image of the Lichtenstein castle.
 %    LTFATTEXT      -  Black and white word: 'LTFAT'.

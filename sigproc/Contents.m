@@ -2,6 +2,23 @@
 %
 %  Peter L. Søndergaard, 2007 - 2023.
 %
+%  Operations on periodic functions
+%    INVOLUTE       -  Involution.
+%    PEVEN          -  Even part of periodic function.
+%    PODD           -  Odd part of periodic function.
+%    PCONV          -  Periodic convolution.
+%    PXCORR         -  Periodic crosscorrelation.
+%    LCONV          -  Linear convolution.
+%    LXCORR	    -  Linear crosscorrelation. 
+%    ISEVENFUNCTION -  Test if function is even.
+%    MIDDLEPAD      -  Cut or extend even function.
+%
+%  Basic Time/Frequency analysis
+%    TCONV          -  Twisted convolution
+%    DSFT           -  Discrete Symplectic Fourier Transform
+%    ZAK            -  Zak transform
+%    IZAK           -  Inverse Zak transform
+%
 %  Windows and wavelets
 %    FIRWIN         -  FIR windows (Hanning,Hamming,Blackman,...).
 %    FIRKAISER      -  FIR Kaiser-Bessel window.

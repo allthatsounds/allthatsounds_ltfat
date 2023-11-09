@@ -2,7 +2,7 @@
 %
 %  Peter L. Søndergaard, 2008 - 2023.
 %  
-%  Fourier analysis
+%  Fourier transforms
 %    DFT            -  Unitary discrete Fourier transform.
 %    IDFT           -  Inverse of |dft|.
 %    FFTREAL        -  FFT for real valued signals.
@@ -15,7 +15,7 @@
 %    PLOTFFT        -  Plot FFT coefficients.
 %    PLOTFFTREAL    -  Plot |fftreal| coefficients.
 %
-%  Cosine and Sine transforms.
+%  Cosine and Sine transforms
 %    DCTI           -  Discrete cosine transform type I
 %    DCTII          -  Discrete cosine transform type II
 %    DCTIII         -  Discrete cosine transform type III
