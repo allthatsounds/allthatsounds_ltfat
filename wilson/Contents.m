@@ -3,6 +3,7 @@
 %  Peter L. Søndergaard, 2007 - 2023.
 %
 %  Basic transform routines
+%    - Wilson transform
 %    DWILT          -  Discrete Wilson transform
 %    IDWILT         -  Inverse discrete Wilson transform
 %    DWILT2         -  2-D Discrete Wilson transform
