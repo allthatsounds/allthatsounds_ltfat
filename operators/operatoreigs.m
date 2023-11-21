@@ -36,6 +36,7 @@ function outsig=operatoreigs(Op,K,varargin);
 %
 %   See also: operatornew, operator, ioperator
   
+
 if nargin<2
   error('%s: Too few input parameters.',upper(mfilename));
 end;
